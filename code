@@ -1,7 +1,0 @@
-import imageio.v3 as iio
-filenames=["tombraider1.PNG","tombraider2.PNG","tombraider3.PNG","tombraider4.PNG","tombraider5.PNG"]
-images=[]
-for filename in filenames:
-    images.append(iio.imread(filename))
-
-iio.imwrite("tombraider.gif", images, duration=1500, loop=0)
